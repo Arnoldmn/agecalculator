@@ -113,9 +113,11 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
+              const SizedBox(
+                height: 15,
+              ),
               Container(
                 width: double.maxFinite,
-                height: 200,
                 decoration: BoxDecoration(
                   color: const Color(
                     0xff333333,
@@ -123,6 +125,66 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.circular(
                     15,
                   ),
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          height: 200,
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 20,
+                          ),
+                          child: Column(
+                            children: [
+                              const Text(
+                                "AGE",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                ),
+                              ),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: const [
+                                  Text(
+                                    "21",
+                                    style: TextStyle(
+                                      fontSize: 76,
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xffCDDC39),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(
+                                      bottom: 14.0,
+                                    ),
+                                    child: Text(
+                                      "YEARS",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 22,
+                                        fontWeight: FontWeight.w700,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        Container(
+                          height: 170,
+                          width: 1,
+                          color: const Color(
+                            0xff999999,
+                          ),
+                        ),
+                        Container(),
+                      ],
+                    )
+                  ],
                 ),
               )
             ],
